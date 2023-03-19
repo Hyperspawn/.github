@@ -26,4 +26,4 @@ If you encounter any issues while using Hyperspawn, try the following troublesho
 - Check for software updates or driver updates for your VR headset, motion capture system, and humanoid robot.
 - Restart the Hyperspawn software or your computer.
 
-If you still need assistance, please [open an issue](https://github.com/username/hyperspawn/issues/new) or contact us at contact@hyperspawn.com.
+If you still need assistance, please [open an issue](https://github.com/username/hyperspawn/issues/new) or contact us at priyanshu@hyperspawn.co
