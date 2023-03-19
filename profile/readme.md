@@ -35,10 +35,10 @@ Hyperspawn's technology enables various use cases across different industries:
 Follow the instructions in the [Hardware Guide](hardware_guide.md) to set up the VR headset, motion capture system, and humanoid robot.
 
 ## Usage
-Refer to the User Guide for detailed instructions on how to use Hyperspawn, including calibration, teleoperation, and troubleshooting.
+Refer to the [User Guide](user_guide.md) for detailed instructions on how to use Hyperspawn, including calibration, teleoperation, and troubleshooting.
 
 ## Contribute
-We welcome contributions from the community! Please check the Contributing Guide to learn how you can get involved in the project.
+We welcome contributions from the community! Please check the [Contributing Guide](contributing.md) to learn how you can get involved in the project.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
