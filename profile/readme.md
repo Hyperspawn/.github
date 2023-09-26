@@ -8,6 +8,12 @@ Hyperspawn is an open-source project that aims to develop humanoid robots that m
 ## Table of Contents
 - [Features](#features)
 - [Use Cases](#use-cases)
+- [Vision](#the-vision)
+- [Hardware](#hardware)
+- [Software](#software)
+  - [Balancing](#balancing)
+  - [Computer Vision](#computer-vision)
+  - [Conversational AI](#conversational-ai)
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
 - [Contribute](#contribute)
@@ -28,6 +34,31 @@ Hyperspawn's technology enables various use cases across different industries:
 - Defense & rescue operations: Gather intelligence or conduct intrusion missions without risking human lives
 - Remote hardware inspections: Inspect and collaborate on physical products in industries
 - Healthcare: Remote patient monitoring and assistance
+
+## The Vision
+We envision a world with infinite mobility for humanity, where humanoid robots seamlessly execute tasks in extreme conditions, ensuring human safety and efficiency. This is a stepping stone to developing advanced autonomous humanoids, integrating the latest advances in AI and robotics.
+
+## Hardware
+In this section, you will find all the CAD models, schematics, and specifications of the hardware components used in our humanoid robots.
+
+- [CAD Models](URL)
+- [Schematics](URL)
+- [Specifications](URL)
+
+## Software
+This section contains the software components that power the AI functionalities of our humanoid robots.
+
+### Balancing
+- **Description:** Balancing algorithms to maintain equilibrium and stability during movement.
+- **Documentation:** [Link](URL)
+
+### Computer Vision
+- **Description:** Advanced computer vision algorithms for object detection, recognition, and navigation.
+- **Documentation:** [Link](URL)
+
+### Conversational AI
+- **Description:** Large Language Models (LLMs) enabling the humanoid to understand and respond to human language.
+- **Documentation:** [Link](URL)
 
 ## Installation & Setup
 
