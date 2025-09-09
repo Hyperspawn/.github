@@ -3,81 +3,79 @@
 # Hyperspawn
 
 Hyperspawn is an open-source project that aims to develop humanoid robots that mimic human actions accurately and act as proxy avatars for users to control from anywhere in the world. Our solution combines immersive virtual reality (VR) and teleoperation to enable seamless interaction between humans and their robotic avatars.
+# Hyperspawn Robotics · Organization Index
+
+**Embodied AI for everyone.** We build open-source humanoid robots and the software to control them — simulation, RL, and teleoperation — so anyone can replicate, study, and push the field forward.
+
+---
+
+## Stack
+
+> These components live in dedicated repos (some private while we stabilize). They’re referenced from **Dropbear** and will be opened as they mature.
+
+- **dropbear_urdf** — URDF/Xacro and meshes for ROS 2 pipelines and downstream simulators.  
+- **dropbear_ros** — ROS 2 packages: controllers, joint publishers, teleop nodes, RViz setups.  
+- **dropbear_gazebo** — SDF world + plugins + control-bindings for Gazebo.  
+- **dropbear_mjcf** — MuJoCo model for MJCF-based stacks and Isaac import.  
+- **dropbear_rviz** — RViz presets and visualization tooling.  
+- **dropbear_printables** — 3MF plates, STLs, and print guides per subassembly.  
+- **dropbear_hardware** — CAD (STEP/FBX/STL/USDC), exploded views, and subassembly trees.  
+- **dropbear_electronics** — Schematics, PCBs, harnessing and wiring maps.  
+- **dropbear_firmware** — ESP32-based motor control (CAN), sensor I/O, timing.  
+- **dropbear_rl** — RL environments + baselines for locomotion & manipulation.  
+- **dropbear_sim2real** — Calibration, state estimation alignment, and transfer tooling.  
+- **dropbear_isaac** — USD assets + Isaac Sim/Lab workflows, validation scripts.  
+- **actuator-testbench / opencycloid-hs / openqdd-hs / myactuator-can** — Open-source actuators and comparative tooling.  
+- **hyperspawn_isaacstack** — Adapters/utilities for NVIDIA Isaac frameworks.  
+- **llm-control** — Language + vision loop to trigger skills and motion primitives.
 
 
-## Table of Contents
-- [Features](#features)
-- [Use Cases](#use-cases)
-- [Vision](#the-vision)
-- [Hardware](#hardware)
-- [Software](#software)
-  - [Balancing](#balancing)
-  - [Computer Vision](#computer-vision)
-  - [Conversational AI](#conversational-ai)
-- [Installation & Setup](#installation--setup)
-- [Usage](#usage)
-- [Contribute](#contribute)
-- [License](#license)
-- [Contact](#contact)
+---
 
-## Features
-- Humanoid robot design with biologically precise mimicry of human movement
-- Integration with off-the-shelf VR and motion capture equipment
-- Real-time transfer of full-body motion capture data over the internet
-- Immersive VR experience with a first-person view from the robot's camera
-- Modular and customizable design for various use cases
+## Research pillars
 
-## Use Cases
-Hyperspawn's technology enables various use cases across different industries:
+### Reinforcement Learning
+- Task suites for balance, walking, reaching, grasping.  
+- Sim pipelines in MuJoCo and NVIDIA Isaac Lab; policy export hooks to ROS 2.  
+- Goal: train in sim, deploy on robot with minimal friction (same joint naming/limits).
 
-- Social interaction: Interact with loved ones or collaborate on physical projects remotely
-- Defense & rescue operations: Gather intelligence or conduct intrusion missions without risking human lives
-- Remote hardware inspections: Inspect and collaborate on physical products in industries
-- Healthcare: Remote patient monitoring and assistance
+### Teleoperation
+- **ROS bridge + Python SDK** for “do this” control: keyboard/joystick, or programmatic.  
+- Full‑body teleop for debugging and data collection; record/relay trajectories for imitation learning.
 
-## The Vision
-We envision a world with infinite mobility for humanity, where humanoid robots seamlessly execute tasks in extreme conditions, ensuring human safety and efficiency. This is a stepping stone to developing advanced autonomous humanoids, integrating the latest advances in AI and robotics.
+### Simulation
+- URDF→SDF→MJCF→USD conversion paths; consistent frames and units.  
+- Isaac workflows with articulated USD, collision/visual mesh split, and CI validation.
 
-## Hardware
-In this section, you will find all the CAD models, schematics, and specifications of the hardware components used in our humanoid robots.
+### Hardware
+- 3D‑printable frames, modular limbs, and open-source actuators (QDD/planetary/cycloidal).  
+- Electronics stack with Jetson Orin + distributed microcontrollers over CAN.
 
-- [CAD Models](URL)
-- [Schematics](URL)
-- [Specifications](URL)
+---
 
-## Software
-This section contains the software components that power the AI functionalities of our humanoid robots.
+## Community & Links
 
-### Balancing
-- **Description:** Balancing algorithms to maintain equilibrium and stability during movement.
-- **Documentation:** [Link](URL)
+- Website: https://hyperspawn.co  
+- Docs: https://www.hyperspawn.co/docs  
+- Gallery: https://hyperspawn.co/gallery  
+- Web Simulator: https://hyperspawn.co/sim  
+- Buy Robot: https://hyperspawn.co/buy  
+- Discord: https://discord.com/invite/tFeqrdJzkS  
+- Telegram: https://t.me/fractionalrobots  
 
-### Computer Vision
-- **Description:** Advanced computer vision algorithms for object detection, recognition, and navigation.
-- **Documentation:** [Link](URL)
+---
 
-### Conversational AI
-- **Description:** Large Language Models (LLMs) enabling the humanoid to understand and respond to human language.
-- **Documentation:** [Link](URL)
+## Note from Maintainers: **[Priyanshu](https://github.com/Priyanshupareek) & [Cole](https://github.com/robit-man)**
 
-## Installation & Setup
 
-1. Clone the repository:
+You’re at the **assembly stage**, which means you’ve sourced your parts and probably spent a bunch of time and money on this project. To that, I love you for being here. I’ve never met you, but I like the way you think — we might be thinking alike in our tech bubble. Keep going, my guy.
 
-Follow the instructions in the [Hardware Guide](hardware_guide.md) to set up the VR headset, motion capture system, and humanoid robot.
+We’re going to have smart robots do everything in the world — from production to abundance of resources for humanity, to a world where people are free from tasks they don’t truly enjoy doing. Even if it’s just sitting and watching, high UBI until the value of money shifts. Okay, I might’ve gone too meta, but peace out ✌️
 
-## Usage
-Refer to the [User Guide](user_guide.md) for detailed instructions on how to use Hyperspawn, including calibration, teleoperation, and troubleshooting.
+**Building a humanoid robot is wild.** Only a few years separate us from accessible humanoids. What you’re doing now is pioneering. If you're here, you're part of something bigger.
 
-## Contribute
-We welcome contributions from the community! Please check the [Contributing Guide](contributing.md) to learn how you can get involved in the project.
+---
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
+### Contributing
 
-## Contact
-If you have any questions or need support, please feel free to open an issue or contact us at:
-
-Email: priyanshu@hyperspawn.co  
-Website: https://hyperspawn.co  
-Twitter: @hyperspawn
+Open an issue or PR on **Dropbear** to propose changes. Be kind, be specific, ship reproducibility.
