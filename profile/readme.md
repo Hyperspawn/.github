@@ -2,8 +2,7 @@
 
 # Hyperspawn
 
-Hyperspawn is an open-source project that aims to develop humanoid robots that mimic human actions accurately and act as proxy avatars for users to control from anywhere in the world. Our solution combines immersive virtual reality (VR) and teleoperation to enable seamless interaction between humans and their robotic avatars.
-# Hyperspawn Robotics · Organization Index
+Hyperspawn is an open organization that aims to develop intelligent humanoid robots that evolves to perform real-world tasks in physical environment. The robots also mimic human actions accurately and act as proxy avatars for users to control from anywhere in the world. We are working on advanced AI with immersive virtual reality (VR) and teleoperation to enable seamless interaction between humans and their robotic avatars.
 
 **Embodied AI for everyone.** We build open-source humanoid robots and the software to control them — simulation, RL, and teleoperation — so anyone can replicate, study, and push the field forward.
 
